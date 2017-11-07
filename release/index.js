@@ -2777,12 +2777,13 @@ var DataTableBodyRowComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [Object]),
         __metadata("design:returntype", void 0)
     ], DataTableBodyRowComponent.prototype, "onKeyDown", null);
-    __decorate([
-        core_1.HostListener('mouseenter', ['$event']),
-        __metadata("design:type", Function),
-        __metadata("design:paramtypes", [Event]),
-        __metadata("design:returntype", void 0)
-    ], DataTableBodyRowComponent.prototype, "onMouseenter", null);
+    // removed to prevent hover event from causing a change detection when hovering over a row
+    // __decorate([
+    //     core_1.HostListener('mouseenter', ['$event']),
+    //     __metadata("design:type", Function),
+    //     __metadata("design:paramtypes", [Event]),
+    //     __metadata("design:returntype", void 0)
+    // ], DataTableBodyRowComponent.prototype, "onMouseenter", null);
     DataTableBodyRowComponent = __decorate([
         core_1.Component({
             selector: 'datatable-body-row',
